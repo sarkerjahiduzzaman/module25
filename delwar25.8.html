@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section id="section-id">
+        <ul id="ul-id">
+            <li id="item-1">this is jahid hasan</li>
+            <li id="item-2">this is jahid hasan</li>
+            <li id="item-3">this is jahid hasan</li>
+            <li id="item-4">this is jahid hasan</li>
+            <li id="item-5">this is jahid hasan</li>
+        </ul>
+    </section>
+
+
+    <script>
+        document.getElementById('item-2').addEventListener('click',function(event){
+            console.log("item-2 is clicked")
+            event.stopPropagation();
+        })
+        document.getElementById('ul-id').addEventListener('click',function(x){
+            console.log("ul is clicked")
+            x.stopPropagation();
+        })
+        document.getElementById('section-id').addEventListener('click',function(x){
+            console.log("section is clicked")
+            x.stopPropagation();
+        })
+    </script>
+</body>
+</html>-2 
