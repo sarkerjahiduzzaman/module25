@@ -31,7 +31,9 @@ document.getElementById('submit-id').addEventListener('click',function(){
     //create p tag and set text comment box text
     const p=document.createElement('p');
     p.innerText=getText;
+    //connet previous comment
     const addComment=document.getElementById('comment-id');
     addComment.appendChild(p)
-    console.log(addComment.appendChild(p))
+    //console.log(addComment.appendChild(p))
+    commentText.value='';
 })
